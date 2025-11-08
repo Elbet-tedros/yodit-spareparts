@@ -413,3 +413,17 @@ footer a {
   color: #f44336; /* bright red on hover */
   text-decoration: underline;
 }
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+header .logo-img {
+  width: 40px; /* adjust size as needed */
+  height: auto;
+}
+
+
+
