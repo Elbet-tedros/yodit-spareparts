@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yodit Auto Spare Parts  - Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header (same as other pages) -->
+  <header>
+    <div class="logo">
+  <img src="images/logo.png" alt="Yodit Auto SpareParts Logo" class="logo-img">
+  <span>Yodit Auto Spare Parts</span>
+</div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="reviews.html" class="active">Reviews</a>
+    </nav>
+  </header>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h2>Customer Testimonials</h2>
+    <div class="reviews-list"></div>
+  </section>
+
+  <!-- Submit Review Form -->
+  <section class="submit-review">
+    <h2>Leave a Review</h2>
+    <form class="review-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Review" required></textarea>
+
+      <div class="form-stars">
+        <label>Rate us:</label>
+        <div class="star-input">
+          <span data-value="1">☆</span>
+          <span data-value="2">☆</span>
+          <span data-value="3">☆</span>
+          <span data-value="4">☆</span>
+          <span data-value="5">☆</span>
+        </div>
+      </div>
+
+      <input type="hidden" name="rating" value="0">
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+ <footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <h3>Yodit Auto SpareParts</h3>
+      <p>Quality Car Spare Part in Dire Dawa</p>
+    </div>
+
+    <div class="footer-center">
+      <h4>Contact Info</h4>
+      <p>📞 <a href="tel:+251915321344">+251 915 321 344</a></p>
+      <p>✉ <a href="mailto:yoditspareparts@gmail.com">yoditspareparts@gmail.com</a></p>
+      <p>📍 <a href="https://www.google.com/maps/place/Dire+Dawa,+Ethiopia" target="_blank">Dire Dawa, Ethiopia</a></p>
+    </div>
+  </div>
+
+  <p class="footer-bottom">© 2025 Yodit Auto SpareParts | All Rights Reserved</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
