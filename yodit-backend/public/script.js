@@ -3,6 +3,9 @@
 // -------------------------------
 
 // Toggle mobile menu visibility
+const API_URL = 'https://yodit-spareparts-3.onrender.com';
+
+
 function toggleMenu() {
   const menu = document.getElementById('navMenu');
   menu.classList.toggle('show');
@@ -34,8 +37,8 @@ reviewForm.addEventListener('submit', async function(e) {
   };
 
   try {
-    const API_URL = 'https://yodit-spareparts-3.onrender.com';
-    const res = await fetch(`${API_URL}/reviews`, {
+    const res = await fetch(`${API_URL}/reviews`, 
+ {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
