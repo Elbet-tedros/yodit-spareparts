@@ -34,7 +34,8 @@ reviewForm.addEventListener('submit', async function(e) {
   };
 
   try {
-    const res = await fetch('http://localhost:3000/reviews', {
+    const API_URL = 'https://yodit-spareparts-3.onrender.com';
+    const res = await fetch(`${API_URL}/reviews`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
@@ -59,7 +60,7 @@ reviewForm.addEventListener('submit', async function(e) {
 // Function to load reviews
 async function loadReviews() {
   const reviewsContainer = document.querySelector('.reviews-list');
-  const res = await fetch('http://localhost:3000/reviews');
+  const res = await fetch(`${API_URL}/reviews`);
   const reviews = await res.json();
 
   reviewsContainer.innerHTML = '';
