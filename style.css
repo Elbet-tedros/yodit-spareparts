@@ -155,6 +155,21 @@ nav a.active {
   background: #d32f2f;
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 15px; /* reduce vertical height on mobile */
+    background-position: center top; /* keep image well-cropped */
+  }
+
+  .hero h1 {
+    font-size: 1.8rem; /* smaller title for mobile */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
 
 /* ---------- Sections ---------- */
 section {
@@ -241,29 +256,6 @@ section p {
   }
 }
 
-
-/* ---------- Testimonials ---------- */
-.testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  justify-content: center;
-}
-
-.testimonial-card {
-  background: #ffebee;
-  padding: 20px;
-  border-radius: 12px;
-  flex: 1 1 250px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
 /* ---------- Contact Info ---------- */
 .contact-info {
   display: grid;
@@ -338,8 +330,10 @@ section p {
 footer {
   background-color: #b71c1c;
   color: white;
-  padding: 5px 0;              /* minimal height */
-  font-size: 0.8rem;
+  padding: 40px 0;             /* more vertical space on desktop */
+  font-size: 1rem;             /* slightly larger text */
+  line-height: 1.6;            /* relaxed spacing */
+
 }
 
 footer,
@@ -403,9 +397,24 @@ footer a {
   .footer-content {
     flex-direction: column;
     gap: 2px;
-    padding: 0;
+    padding: 5px 0;
+  }
+
+  footer {
+    background-color: #b71c1c;
+    color: white;
+    padding: 10px 0;       /* small height for mobile */
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+    padding: 2px 0;
+    margin-top: 2px;
   }
 }
+
 
 header .logo {
   display: flex;
